@@ -11,6 +11,7 @@ pipeline {
       }
       steps {
         sh 'mvn clean install'
+		echo "Maven is installed"
       }
     }
     stage('Docker Build') {
